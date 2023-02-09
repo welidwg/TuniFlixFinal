@@ -3,10 +3,12 @@ import Carousel from "../../components/Carousel";
 import Header from "../../components/Header";
 import List from "../../components/List";
 import Navbar from "../../components/Navbar";
+import { APP_NAME } from "../../constants/vars";
+import $ from "jquery";
 
 export default function Home(props) {
     useEffect(() => {
-        document.title += " - Home";
+        document.title = `${APP_NAME} - Home`;
     }, []);
     return (
         <>
@@ -21,7 +23,6 @@ export default function Home(props) {
                     <List />
                 </div>
             </div>
-            <Header />
         </>
     );
 }

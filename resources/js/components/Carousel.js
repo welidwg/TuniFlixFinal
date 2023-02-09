@@ -1,3 +1,5 @@
+import React, { useState, useRef } from "react";
+
 export default function Carousel(props) {
     const Movies = [
         {
@@ -142,6 +144,7 @@ export default function Carousel(props) {
                                                     {" "}
                                                     <i class="far fa-play"></i>
                                                 </button>
+
                                                 <button
                                                     className="btn btn-gamer-1 rounded w-25  "
                                                     data-bs-toggle="tooltip"

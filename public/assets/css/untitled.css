@@ -73,6 +73,11 @@ body {
     border-right-color: var(--color-3) !important;
     border-bottom-color: var(--color-3) !important;
 }
+.navbar-collapse .active {
+    color: wheat !important;
+    background-color: var(--color-1);
+    border: unset !important;
+}
 .color2-light .bottom-nav {
     position: fixed;
     bottom: 0;

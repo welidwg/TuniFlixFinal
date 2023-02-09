@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { APP_NAME } from "../constants/vars";
 export default function Navbar(props) {
     return (
@@ -171,9 +172,13 @@ export default function Navbar(props) {
                                 Discover <i class="fas fa-radar"></i>
                             </button>
                         </ul>
-                        <button class="btn btn-gamer-3 fw-bold" type="button">
+                        <NavLink
+                            className="btn btn-gamer-3 fw-bold"
+                            type="button"
+                            to="/login"
+                        >
                             <i class="fas fa-sign-in-alt"></i> Login
-                        </button>
+                        </NavLink>
                     </div>
                 </div>
             </nav>

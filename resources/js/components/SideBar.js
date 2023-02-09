@@ -1,3 +1,5 @@
+import { NavLink, useLocation } from "react-router-dom";
+
 export default function SideBar(props) {
     return (
         <div
@@ -17,16 +19,16 @@ export default function SideBar(props) {
             </a>
             <ul class="nav  nav-flush flex-column  text-center mt-5">
                 <li class="nav-item ">
-                    <a
-                        href="#"
-                        class="nav-link active  py-3 "
+                    <NavLink
+                        to={"/"}
+                        className="nav-link   py-3 "
                         data-bs-toggle="tooltip"
                         data-bs-placement="right"
                         data-bs-html="true"
                         title="<div class=''>Home</div>"
                     >
                         <i className="fas fa-house"> </i>
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
                     <a
