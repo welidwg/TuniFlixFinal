@@ -24,7 +24,9 @@ export default function Carousel(props) {
     return (
         <div
             id="carouselExampleCaptions"
-            class="carousel slide custom_carousel mx-4 "
+            className="carousel slide custom_carousel mx-4 "
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
         >
             <div class="carousel-indicators">
                 {/*  */}
@@ -164,30 +166,6 @@ export default function Carousel(props) {
                     );
                 })}
             </div>
-            {/* <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev"
-            >
-                <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next"
-            >
-                <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-            </button> */}
         </div>
     );
 }

@@ -15,10 +15,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/untitled.css') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/fa/css/all.min.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('assets/FAPRO/css/all.css') }}"> --}}
-    {{-- <link href="{{ asset('assets/FAPRO/css/fontawesome.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/FAPRO/css/brands.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/FAPRO/css/solid.css') }}" rel="stylesheet" /> --}}
+
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 

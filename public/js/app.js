@@ -6172,7 +6172,9 @@ function Carousel(props) {
   }];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     id: "carouselExampleCaptions",
-    "class": "carousel slide custom_carousel mx-4 ",
+    className: "carousel slide custom_carousel mx-4 ",
+    "data-bs-ride": "carousel",
+    "data-bs-interval": "5000",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       "class": "carousel-indicators",
       children: Movies.map(function (item, index) {
