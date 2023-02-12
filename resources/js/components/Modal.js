@@ -15,7 +15,7 @@ export default function Modal(props) {
             <div class="modal-dialog modal-dialog-scrollable modal-lg">
                 <div class="modal-content  movie-modal-about ">
                     <div
-                        class="modal-header row m-0 p-0 border-0 shadow"
+                        class="modal-header row m-0 p-0 border-0 "
                         style={{
                             height: "250px",
                             backgroundImage: `url("/assets/img/movies/bg/${props.item.background}")`,
@@ -26,7 +26,7 @@ export default function Modal(props) {
                             backgroundRepeat: "no-repeat",
                         }}
                     >
-                        <div className="col-md-5 bg-transparent-black h-100 p-2 d-flex ">
+                        <div className="col-md-8 bg-transparent-black h-100 p-2 d-flex ">
                             {" "}
                             <h1
                                 class="modal-title fs-1 my-auto mx-auto d-flex flex-column"
@@ -52,19 +52,17 @@ export default function Modal(props) {
                                 </span> */}
                             </h1>
                         </div>
-                        <div className="col-md-7 text-center bg-transparent-black h-100 d-none d-md-flex p-2">
+                        <div className="col-md-4 text-center bg-transparent-black h-100 d-none d-md-flex p-2">
                             {" "}
-                            <div class="embed-responsive rounded embed-responsive-16by9 w-100 d-flex  m-1 p-1 ">
-                                <iframe
-                                    class="d-flex embed-responsive-item rounded p-2 w-75 mx-auto  "
-                                    height={"100%"}
-                                    width={"100%"}
-                                    src="https://www.youtube.com/embed/zSWdZVtXT7E"
-                                ></iframe>
-                            </div>
+                            <img
+                                className=" img-fluid my-auto"
+                                style={{ height: "200px" }}
+                                src={`/assets/img/movies/poster/${props.item.poster}`}
+                            />
                         </div>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body shadow-lg  ">
+                        {/* for mobile */}
                         <div class="embed-responsive embed-responsive-4by3 m-1 p-1 d-md-none">
                             <h5 className="fw-bold">Trailer </h5>
 
@@ -74,39 +72,64 @@ export default function Modal(props) {
                                 src="https://www.youtube.com/embed/zSWdZVtXT7E"
                             ></iframe>
                         </div>
-                        <div className="m-1 p-1">
-                            <h5 className="fw-bold">Description </h5>
-                            <p
-                                style={{
-                                    fontSize: "14px",
-                                    letterSpacing: "1px",
-                                }}
-                            >
-                                This is some placeholder content to show the
-                                scrolling behavior for modals. We use repeated
-                                line breaks to demonstrate how content can
-                                exceed minimum inner height, thereby showing
-                                inner scrolling. When content becomes longer
-                                than the predefined max-height of modal, content
-                                will be cropped and scrollable within the modal.
-                            </p>
-                        </div>
-                        <div className="m-1 p-1">
-                            <h5 className="fw-bold">More informations </h5>
-                            <p
-                                style={{
-                                    fontSize: "14px",
-                                    letterSpacing: "1px",
-                                }}
-                            >
-                                This is some placeholder content to show the
-                                scrolling behavior for modals. We use repeated
-                                line breaks to demonstrate how content can
-                                exceed minimum inner height, thereby showing
-                                inner scrolling. When content becomes longer
-                                than the predefined max-height of modal, content
-                                will be cropped and scrollable within the modal.
-                            </p>
+                        {/* end for mobile */}
+
+                        <div className="d-flex ">
+                            <div className="col-md-6">
+                                <div className="m-1 p-1">
+                                    <h5 className="fw-bold">Description </h5>
+                                    <p
+                                        style={{
+                                            fontSize: "14px",
+                                            letterSpacing: "1px",
+                                        }}
+                                    >
+                                        This is some placeholder content to show
+                                        the scrolling behavior for modals. We
+                                        use repeated line breaks to demonstrate
+                                        how content can exceed minimum inner
+                                        height, thereby showing inner scrolling.
+                                        When content becomes longer than the
+                                        predefined max-height of modal, content
+                                        will be cropped and scrollable within
+                                        the modal.
+                                    </p>
+                                </div>
+                                <div className="m-1 mt-2 p-1">
+                                    {/* <h5 className="fw-bold">More informations </h5> */}
+                                    <div className="d-flex justify-content-evenly text-center">
+                                        <div className="col-md-4 ">
+                                            <span className="fw-bold">
+                                                Gender :
+                                            </span>{" "}
+                                            Horror
+                                        </div>
+                                        <div className="col-md-4">
+                                            <span className="fw-bold">
+                                                Time :
+                                            </span>{" "}
+                                            1h 66min
+                                        </div>
+                                        <div className="col-md-4">
+                                            <span className="fw-bold">
+                                                Year :
+                                            </span>
+                                            2016
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6 d-none d-md-block">
+                                <div class="embed-responsive embed-responsive-4by3 m-1 p-1 ">
+                                    <h5 className="fw-bold">Trailer </h5>
+
+                                    <iframe
+                                        class="d-flex embed-responsive-item p-2 w-100 mx-auto "
+                                        height={"300px"}
+                                        src="https://www.youtube.com/embed/zSWdZVtXT7E"
+                                    ></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer border-secondary mt-2 shadow-sm">

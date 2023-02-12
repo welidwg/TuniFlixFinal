@@ -6780,7 +6780,7 @@ function Modal(props) {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         "class": "modal-content  movie-modal-about ",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          "class": "modal-header row m-0 p-0 border-0 shadow",
+          "class": "modal-header row m-0 p-0 border-0 ",
           style: {
             height: "250px",
             backgroundImage: "url(\"/assets/img/movies/bg/".concat(props.item.background, "\")"),
@@ -6790,7 +6790,7 @@ function Modal(props) {
             backgroundRepeat: "no-repeat"
           },
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "col-md-5 bg-transparent-black h-100 p-2 d-flex ",
+            className: "col-md-8 bg-transparent-black h-100 p-2 d-flex ",
             children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h1", {
               "class": "modal-title fs-1 my-auto mx-auto d-flex flex-column",
               id: "exampleModalScrollableTitle",
@@ -6810,19 +6810,17 @@ function Modal(props) {
               })]
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "col-md-7 text-center bg-transparent-black h-100 d-none d-md-flex p-2",
-            children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-              "class": "embed-responsive rounded embed-responsive-16by9 w-100 d-flex  m-1 p-1 ",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iframe", {
-                "class": "d-flex embed-responsive-item rounded p-2 w-75 mx-auto  ",
-                height: "100%",
-                width: "100%",
-                src: "https://www.youtube.com/embed/zSWdZVtXT7E"
-              })
+            className: "col-md-4 text-center bg-transparent-black h-100 d-none d-md-flex p-2",
+            children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
+              className: " img-fluid my-auto",
+              style: {
+                height: "200px"
+              },
+              src: "/assets/img/movies/poster/".concat(props.item.poster)
             })]
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          "class": "modal-body",
+          "class": "modal-body shadow-lg  ",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             "class": "embed-responsive embed-responsive-4by3 m-1 p-1 d-md-none",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h5", {
@@ -6834,28 +6832,59 @@ function Modal(props) {
               src: "https://www.youtube.com/embed/zSWdZVtXT7E"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "m-1 p-1",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h5", {
-              className: "fw-bold",
-              children: "Description "
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-              style: {
-                fontSize: "14px",
-                letterSpacing: "1px"
-              },
-              children: "This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal."
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "m-1 p-1",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h5", {
-              className: "fw-bold",
-              children: "More informations "
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-              style: {
-                fontSize: "14px",
-                letterSpacing: "1px"
-              },
-              children: "This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal."
+            className: "d-flex ",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              className: "col-md-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "m-1 p-1",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h5", {
+                  className: "fw-bold",
+                  children: "Description "
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+                  style: {
+                    fontSize: "14px",
+                    letterSpacing: "1px"
+                  },
+                  children: "This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal."
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                className: "m-1 mt-2 p-1",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                  className: "d-flex justify-content-evenly text-center",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "col-md-4 ",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                      className: "fw-bold",
+                      children: "Gender :"
+                    }), " ", "Horror"]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "col-md-4",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                      className: "fw-bold",
+                      children: "Time :"
+                    }), " ", "1h 66min"]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "col-md-4",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                      className: "fw-bold",
+                      children: "Year :"
+                    }), "2016"]
+                  })]
+                })
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              className: "col-md-6 d-none d-md-block",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                "class": "embed-responsive embed-responsive-4by3 m-1 p-1 ",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h5", {
+                  className: "fw-bold",
+                  children: "Trailer "
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iframe", {
+                  "class": "d-flex embed-responsive-item p-2 w-100 mx-auto ",
+                  height: "300px",
+                  src: "https://www.youtube.com/embed/zSWdZVtXT7E"
+                })]
+              })
             })]
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
