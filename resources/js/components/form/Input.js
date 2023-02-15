@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 
-export default function Input({ label, type, id, name, placeholder }) {
+export default function Input({
+    label,
+    type,
+    id,
+    name,
+    placeholder,
+    required,
+}) {
     const [isShowen, setShowed] = useState(false);
     function togglePassword() {
         let passwordInput = document.getElementById(id);
@@ -28,6 +35,7 @@ export default function Input({ label, type, id, name, placeholder }) {
                 placeholder={placeholder}
                 id={id}
                 name={name}
+                required={required}
             />
             {type == "password" && (
                 <a
@@ -36,9 +44,9 @@ export default function Input({ label, type, id, name, placeholder }) {
                     onClick={togglePassword}
                 >
                     {isShowen ? (
-                        <i className="fas fa-eye-slash"></i>
+                        <i className="fal fa-eye-slash"></i>
                     ) : (
-                        <i className="fas fa-eye"></i>
+                        <i className="fal fa-eye"></i>
                     )}
                 </a>
             )}

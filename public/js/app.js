@@ -6160,17 +6160,20 @@ function Carousel(props) {
     id: 1,
     title: " The Conjuring",
     background: "bg_conjuring.jpg",
-    poster: "poster_conjuring.jpg"
+    poster: "poster_conjuring.jpg",
+    trailer: "https://www.youtube.com/embed/k10ETZ41q5o"
   }, {
     id: 2,
     title: "Interstellar",
     background: "bg_interstellar.jpg",
-    poster: "poster_interstellar.jpg"
+    poster: "poster_interstellar.jpg",
+    trailer: "https://www.youtube.com/embed/zSWdZVtXT7E"
   }, {
     id: 3,
     title: "Fight Club",
     background: "bg_fightclub.jpg",
-    poster: "poster_fightclub.jpg"
+    poster: "poster_fightclub.jpg",
+    trailer: "https://www.youtube.com/embed/qtRKdVHc-cE"
   }];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -6523,31 +6526,82 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function Form(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "mb-3",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_form_Input__WEBPACK_IMPORTED_MODULE_0__["default"], {
-        label: "fas fa-user",
-        name: "username",
-        type: "text",
-        id: "dd",
-        placeholder: "Username"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "mb-3",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_form_Input__WEBPACK_IMPORTED_MODULE_0__["default"], {
-        label: "fas fa-lock",
-        name: "password",
-        type: "password",
-        id: "password",
-        placeholder: "Password"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
-      type: "submit",
-      className: "btn btn-gamer-3 w-100 mb-3 fw-bold",
-      children: ["Let me in ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
-        "class": "fal fa-portal-enter"
+    children: [props["for"] == "login" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "mb-3",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_form_Input__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          label: "fal fa-user",
+          name: "username",
+          type: "text",
+          required: true,
+          id: "dd",
+          placeholder: "Username"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "mb-3",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_form_Input__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          label: "fal fa-lock",
+          name: "password",
+          type: "password",
+          id: "password",
+          required: true,
+          placeholder: "Password"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
+        type: "submit",
+        className: "btn btn-gamer-3 w-100 mb-3 fw-bold",
+        children: ["Let me in ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+          "class": "fal fa-portal-enter"
+        })]
+      })]
+    }), props["for"] == "signup" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
+      children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "mb-3",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_form_Input__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          label: "fal fa-user",
+          name: "username",
+          type: "text",
+          id: "usernameSign",
+          placeholder: "Username",
+          required: true
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "mb-3",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_form_Input__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          label: "fal fa-at",
+          name: "email",
+          type: "email",
+          required: true,
+          id: "emailSign",
+          placeholder: "Email"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "mb-3",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_form_Input__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          label: "fal fa-lock",
+          name: "password",
+          type: "password",
+          id: "password",
+          placeholder: "Password"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        className: "mb-3",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_form_Input__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          label: "fal fa-lock",
+          name: "Confirmpassword",
+          type: "password",
+          id: "Confirmpassword",
+          placeholder: "Confirm your password"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("button", {
+        type: "submit",
+        className: "btn btn-gamer-3 w-100 mb-3 fw-bold",
+        children: ["Let's Start ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+          "class": "fal fa-portal-enter"
+        })]
       })]
     })]
   });
@@ -6829,7 +6883,7 @@ function Modal(props) {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iframe", {
               "class": "d-flex embed-responsive-item p-2 w-100 mx-auto ",
               height: "300px",
-              src: "https://www.youtube.com/embed/zSWdZVtXT7E"
+              src: props.item.trailer
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "d-flex ",
@@ -6845,12 +6899,12 @@ function Modal(props) {
                     fontSize: "14px",
                     letterSpacing: "1px"
                   },
-                  children: "This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal."
+                  children: "This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height"
                 })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
                 className: "m-1 mt-2 p-1",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                  className: "d-flex justify-content-evenly text-center",
+                  className: "d-flex flex-column justify-content-evenly ",
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     className: "col-md-4 ",
                     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
@@ -6881,8 +6935,9 @@ function Modal(props) {
                   children: "Trailer "
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iframe", {
                   "class": "d-flex embed-responsive-item p-2 w-100 mx-auto ",
-                  height: "300px",
-                  src: "https://www.youtube.com/embed/zSWdZVtXT7E"
+                  height: "250px",
+                  src: props.item.trailer,
+                  allowFullScreen: true
                 })]
               })
             })]
@@ -7146,7 +7201,8 @@ function Input(_ref) {
     type = _ref.type,
     id = _ref.id,
     name = _ref.name,
-    placeholder = _ref.placeholder;
+    placeholder = _ref.placeholder,
+    required = _ref.required;
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
     isShowen = _useState2[0],
@@ -7176,15 +7232,16 @@ function Input(_ref) {
       "class": "form-control color-1 rounded-pill shadow-none border-0",
       placeholder: placeholder,
       id: id,
-      name: name
+      name: name,
+      required: required
     }), type == "password" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
       "class": "input-group-text bg-transparent text-dark border-0",
       id: "basic-addon1",
       onClick: togglePassword,
       children: isShowen ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
-        className: "fas fa-eye-slash"
+        className: "fal fa-eye-slash"
       }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
-        className: "fas fa-eye"
+        className: "fal fa-eye"
       })
     })]
   });
@@ -7227,7 +7284,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Container(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "container-fluid p-0",
+    className: "container-fluid p-0 mainContainer ",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "row",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -7434,7 +7491,9 @@ function Login(props) {
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "d-flex justify-content-center ",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Form__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Form__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        "for": "login"
+      })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
       className: "mb-3 text-center d-flex flex-column justify-content-center align-items-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
@@ -7469,7 +7528,54 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Signup)
 /* harmony export */ });
-function Signup(props) {}
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Form */ "./resources/js/components/Form.js");
+/* harmony import */ var _constants_vars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constants/vars */ "./resources/js/constants/vars.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+function Signup(props) {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    document.title = "".concat(_constants_vars__WEBPACK_IMPORTED_MODULE_2__.APP_NAME, " - Sign Up");
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    className: "text-center",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: " d-flex flex-column align-items-center  mb-2",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+        src: "/assets/img/logo/logo_without_text.png",
+        className: "img-fluid ",
+        style: {
+          width: "150px"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h5", {
+        className: "text-white fw-bold fs-3 ",
+        children: "Sign Up"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "d-flex justify-content-center ",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Form__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        "for": "signup"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "mb-3  text-center d-flex  flex-column justify-content-center align-items-center",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("hr", {
+        className: "w-25 "
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.NavLink, {
+        className: "text-white fw-bold",
+        "for": "exampleCheck1",
+        to: "/login",
+        children: "Already have an account ? Login now !"
+      })]
+    })]
+  });
+}
 
 /***/ }),
 

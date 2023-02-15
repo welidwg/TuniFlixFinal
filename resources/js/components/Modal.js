@@ -69,7 +69,7 @@ export default function Modal(props) {
                             <iframe
                                 class="d-flex embed-responsive-item p-2 w-100 mx-auto "
                                 height={"300px"}
-                                src="https://www.youtube.com/embed/zSWdZVtXT7E"
+                                src={props.item.trailer}
                             ></iframe>
                         </div>
                         {/* end for mobile */}
@@ -88,16 +88,12 @@ export default function Modal(props) {
                                         the scrolling behavior for modals. We
                                         use repeated line breaks to demonstrate
                                         how content can exceed minimum inner
-                                        height, thereby showing inner scrolling.
-                                        When content becomes longer than the
-                                        predefined max-height of modal, content
-                                        will be cropped and scrollable within
-                                        the modal.
+                                        height
                                     </p>
                                 </div>
                                 <div className="m-1 mt-2 p-1">
                                     {/* <h5 className="fw-bold">More informations </h5> */}
-                                    <div className="d-flex justify-content-evenly text-center">
+                                    <div className="d-flex flex-column justify-content-evenly ">
                                         <div className="col-md-4 ">
                                             <span className="fw-bold">
                                                 Gender :
@@ -125,8 +121,9 @@ export default function Modal(props) {
 
                                     <iframe
                                         class="d-flex embed-responsive-item p-2 w-100 mx-auto "
-                                        height={"300px"}
-                                        src="https://www.youtube.com/embed/zSWdZVtXT7E"
+                                        height={"250px"}
+                                        src={props.item.trailer}
+                                        allowFullScreen
                                     ></iframe>
                                 </div>
                             </div>

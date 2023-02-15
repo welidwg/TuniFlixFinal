@@ -19,7 +19,7 @@ export default function Login(props) {
                 <h5 className="text-white fw-bold fs-3 ">Login</h5>
             </div>
             <div className="d-flex justify-content-center ">
-                <Form />
+                <Form for="login" />
             </div>
             <div className="mb-3 text-center d-flex flex-column justify-content-center align-items-center">
                 <a className=" fw-bold color-3" for="exampleCheck1">

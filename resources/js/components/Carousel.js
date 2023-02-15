@@ -8,18 +8,21 @@ export default function Carousel(props) {
             title: " The Conjuring",
             background: "bg_conjuring.jpg",
             poster: "poster_conjuring.jpg",
+            trailer: "https://www.youtube.com/embed/k10ETZ41q5o",
         },
         {
             id: 2,
             title: "Interstellar",
             background: "bg_interstellar.jpg",
             poster: "poster_interstellar.jpg",
+            trailer: "https://www.youtube.com/embed/zSWdZVtXT7E",
         },
         {
             id: 3,
             title: "Fight Club",
             background: "bg_fightclub.jpg",
             poster: "poster_fightclub.jpg",
+            trailer: "https://www.youtube.com/embed/qtRKdVHc-cE",
         },
     ];
     return (
