@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/welidwg/TuniFlixFinal/blob/master/public/assets/img/logo/logo.png" width="400"></p>
+<p align="center"><img src="https://github.com/welidwg/TuniFlixFinal/blob/master/public/assets/img/logo/logo.png" width="200"></p>
 
 
 ## About TuniFlix
